@@ -10,22 +10,57 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Axotl Xires - Ayuda',
+			favicon: './src/assets/iconCabezaAjoloteDark.png',
+			title: 'Ayuda para Axotl Xires',
+			customCss: [
+				// Ruta relativa al archivo de estilos personalizados
+				'./src/styles/custom.css',
+			],
+			logo: {
+				src: './src/assets/logoMorado2.png',
+			  },
 			social: {
-				linkedin: 'https://github.com/withastro/starlight',
-				facebook: 'https://facebook.com/withastro',
+				
+				linkedin: 'https://www.linkedin.com/company/axotl-xires/',
+				facebook: 'https://www.facebook.com/profile.php?id=61569988029422',
+				instagram: 'https://instagram.com/axotlxires'
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Introducción',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: '¿Qué es Axotl Xires?', slug: 'que-es-axotl-xires' },
+						{ label: 'Propósito y Visión', slug: 'proposito-vision' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Guías de Usuario',
+					items: [
+						{ label: 'Registro e Inicio de Sesión', slug: 'registro-inicio-sesion' },
+						{ label: 'Navegación por la Plataforma', slug: 'navegacion-plataforma' },
+					],
+				},
+				{
+					label: 'Publicación de Artículos',
+					items: [
+						{ label: 'Creación de Artículos', slug: 'crear-articulos' },
+						{ label: 'Proceso de Revisión', slug: 'proceso-revision' },
+						{ label: 'Ciclo Completo de Revisión', slug: 'ciclo-revision' },
+					],
+				},
+				{
+					label: 'Comunidad y Normativas',
+					items: [
+						{ label: 'Interacción con la Comunidad', slug: 'interaccion-comunidad' },
+						{ label: 'Normas de Contenido', slug: 'normas-contenido' },
+					],
+				},
+				{
+					label: 'Políticas y Soporte',
+					items: [
+						{ label: 'Política de Privacidad', slug: 'politica-privacidad' },
+						{ label: 'Preguntas Frecuentes', slug: 'preguntas-frecuentes' },
+					],
 				},
 			],
 		}),
