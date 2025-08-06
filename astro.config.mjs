@@ -37,7 +37,7 @@ export default defineConfig({
 					label: 'Guías de Usuario',
 					items: [
 						{ label: 'Registro e Inicio de Sesión', slug: 'registro-inicio-sesion' },
-						{ label: 'Navegación por la Plataforma', slug: 'navegacion-plataforma' },
+						{ label: 'Navegación', slug: 'navegacion' },
 					],
 				},
 				{
@@ -45,7 +45,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Creación de Artículos', slug: 'crear-articulos' },
 						{ label: 'Proceso de Revisión', slug: 'proceso-revision' },
-						{ label: 'Ciclo Completo de Revisión', slug: 'ciclo-revision' },
+						{ label: 'Detalles adicionales del ciclo de revisión', slug: 'ciclo-revision' },
 					],
 				},
 				{
