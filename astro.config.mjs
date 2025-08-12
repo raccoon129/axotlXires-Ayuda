@@ -29,7 +29,7 @@ export default defineConfig({
 				{
 					label: 'Introducción',
 					items: [
-						{ label: '¿Qué es Axotl Xires?', slug: 'que-es-axotl-xires' },
+						{ label: '¿Qué es Axotl Xires?', slug: 'acerca-de' },
 						{ label: 'Propósito y Visión', slug: 'proposito-vision' },
 					],
 				},
