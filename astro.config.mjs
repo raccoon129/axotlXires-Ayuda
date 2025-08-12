@@ -45,7 +45,6 @@ export default defineConfig({
 					items: [
 						{ label: 'Creación de Artículos', slug: 'crear-articulos' },
 						{ label: 'Proceso de Revisión', slug: 'proceso-revision' },
-						{ label: 'Detalles adicionales del ciclo de revisión', slug: 'ciclo-revision' },
 					],
 				},
 				{
@@ -59,6 +58,8 @@ export default defineConfig({
 					label: 'Políticas y Soporte',
 					items: [
 						{ label: 'Política de Privacidad', slug: 'politica-privacidad' },
+						{ label: 'Términos y Condiciones', slug: 'terminos' },
+						{ label: 'Copyright', slug: 'copyright' },
 						{ label: 'Preguntas Frecuentes', slug: 'preguntas-frecuentes' },
 					],
 				},
